@@ -166,6 +166,50 @@ main {
   padding: 24px 32px 56px;
 }
 
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-inner p {
+  margin: 0;
+}
+
+.footer-brand {
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 18px;
+}
+
+.footer-contacts a {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.footer-contacts a:hover {
+  color: var(--accent-dark);
+}
+
 .toolbar {
   display: grid;
   gap: 18px;
@@ -546,6 +590,16 @@ main {
 
   main {
     padding: 18px 18px 44px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px 18px;
+  }
+
+  .footer-contacts {
+    justify-content: flex-start;
   }
 
   .controls,

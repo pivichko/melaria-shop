@@ -72,7 +72,7 @@ select {
   background:
     linear-gradient(90deg, rgb(247 247 247 / 0.98) 0%, rgb(247 247 247 / 0.88) 34%, rgb(247 247 247 / 0.22) 70%),
     linear-gradient(0deg, rgb(0 0 0 / 0.10), rgb(0 0 0 / 0.02)),
-    url("assets/hero-bedroom-v2.png");
+    url("https://basket-25.wbbasket.ru/vol4553/part455389/455389207/images/big/01.webp");
   background-position: center, center, center 58%;
   background-size: cover;
   border-bottom: 1px solid var(--line);
@@ -539,7 +539,7 @@ main {
     padding: 42px 18px;
     background:
       linear-gradient(0deg, rgb(247 247 247 / 0.98) 0%, rgb(247 247 247 / 0.90) 45%, rgb(247 247 247 / 0.18) 100%),
-      url("assets/hero-bedroom-v2.png");
+      url("https://basket-25.wbbasket.ru/vol4553/part455389/455389207/images/big/01.webp");
     background-position: center bottom;
     background-size: cover;
   }

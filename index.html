@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MELARIA - каталог постельного белья</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-bar">
+        <a class="brand" href="#" aria-label="MELARIA">MELARIA</a>
+        <nav class="top-nav" aria-label="Основная навигация">
+          <a href="#catalog">Каталог</a>
+          <a href="#details">Подбор</a>
+          <a href="https://www.wildberries.ru/seller/814378" target="_blank" rel="noreferrer">Wildberries</a>
+        </nav>
+      </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Постельное белье MELARIA</p>
+          <h1 id="hero-title">Спокойный каталог для быстрого выбора комплекта</h1>
+          <p>Евро, страйп и 1,5-спальные комплекты с фото, характеристиками и переходом к покупке на Wildberries.</p>
+        </div>
+        <div class="hero-media">
+          <img id="hero-image" src="https://basket-25.wbbasket.ru/vol4553/part455389/455389207/images/big/1.webp" alt="Комплект постельного белья MELARIA">
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="toolbar" id="catalog" aria-label="Фильтры каталога">
+        <div class="summary">
+          <span id="product-count">0 товаров</span>
+          <span id="price-range"></span>
+        </div>
+        <div class="controls">
+          <label class="search-box">
+            <span>Поиск</span>
+            <input id="search-input" type="search" placeholder="Цвет, размер, ткань">
+          </label>
+          <label class="select-box">
+            <span>Сортировка</span>
+            <select id="sort-select">
+              <option value="popular">Популярные</option>
+              <option value="price-asc">Цена по возрастанию</option>
+              <option value="price-desc">Цена по убыванию</option>
+              <option value="rating">Рейтинг</option>
+            </select>
+          </label>
+        </div>
+        <div class="tabs" id="category-tabs" role="tablist" aria-label="Категории"></div>
+      </section>
+
+      <section class="catalog-layout">
+        <aside class="filters" id="details" aria-label="Дополнительные фильтры">
+          <div class="filter-block">
+            <h2>Ткань</h2>
+            <div id="fabric-filters" class="checkbox-list"></div>
+          </div>
+          <div class="filter-block">
+            <h2>Цвет</h2>
+            <div id="color-filters" class="swatches"></div>
+          </div>
+          <button class="link-button" id="reset-filters" type="button">Сбросить фильтры</button>
+        </aside>
+
+        <section>
+          <div class="product-grid" id="product-grid"></div>
+          <p class="empty-state" id="empty-state" hidden>По этим фильтрам товаров не найдено.</p>
+        </section>
+      </section>
+    </main>
+
+    <dialog class="product-dialog" id="product-dialog">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Закрыть">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-gallery">
+          <img id="dialog-image" alt="">
+          <div class="thumbs" id="dialog-thumbs"></div>
+        </div>
+        <div class="dialog-info">
+          <p class="eyebrow" id="dialog-category"></p>
+          <h2 id="dialog-title"></h2>
+          <div class="price-line">
+            <span id="dialog-price"></span>
+            <del id="dialog-old-price"></del>
+          </div>
+          <dl class="specs" id="dialog-specs"></dl>
+          <a class="primary-button" id="dialog-wb" href="#" target="_blank" rel="noreferrer">Купить на Wildberries</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
